@@ -1,0 +1,93 @@
+
+      body {
+    font-family: serif, Courier New;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #610c10;
+    padding: 20px;
+    font-family: Brush Script MT;
+}
+
+nav {
+    background-color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos para secciones */
+
+.row{
+    margin: 0;
+}
+
+.band-info, .albums, .gallery, .formulario {
+    margin: 20px;
+    padding: 20px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.band-info h2, .albums h2, .gallery h2, .formulario h2{
+    color: #610c10;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #777;
+}
+
+.slider{
+    width: 1000;
+    height: 100;
+    position: relative;
+    background: white;
+    box-shadow: 0 10 20 -10px #000;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    height: 100;
+    display: flex;
+    align-items: center;
+    animation: slideshow 10s linear infinite;
+}
+
+.slide img {
+    height: 70;
+    padding: 0 30 30;
+}
+
+@keyframes slideshow {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
